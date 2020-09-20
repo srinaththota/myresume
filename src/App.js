@@ -1,26 +1,53 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/*
+import styled from 'styled-components'
+import { Form ,
+   Input ,Button , 
+   Title ,Text ,
+    Wrapper , InWrapper,
+    Label,
+    Row,}  from './themes';
+*/
+import NavB from './styled-navbar/navb';
+//import MainContent from './components/maincontent/maincontent';                     Maincontent is placed in routes file
+import { BrowserRouter } from 'react-router-dom'
+import Routes from './routes/index'
+    function App() {
+      return (
+        <BrowserRouter>
+        <NavB/>        
+        
+          <Routes/>
+        
+        
+        </BrowserRouter>
+      )
+    }
 
+
+/*
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <InWrapper>
+      <Title>Create new contact</Title>
+      </InWrapper>
+    <Form>
+      <Row>
+        <Label>FirstName</Label>
+        <Label>LastName</Label>
+        hello
+        </Row>
+        <Row>
+        hello
+        </Row>
+        <Row>
+        hello
+        </Row>
+     </Form>
+     
+     </Wrapper>
   );
 }
-
+*/
 export default App;

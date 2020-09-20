@@ -1,3 +1,7 @@
+
+:root{
+  --primaryColor:green;
+}
 .App {
   text-align: center;
 }
